@@ -71,34 +71,39 @@
       margin-bottom: 20px;
     }
 
-   .gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 26px;
+      align-items: start;
+    }
 
-.card{
-  background:white;
-  padding:10px;
-  border-radius:12px;
-  box-shadow:0 6px 14px rgba(0,0,0,0.08);
-  aspect-ratio:1/1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+    .card {
+      background: #FFFFFF;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      padding: 14px;
+    }
 
-.card img{
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
-  border-radius:8px;
-}
+    .image-frame {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #FFFFFF;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-    .caption {
-      margin-top: 12px;
-      color: #555555;
-      font-size: 14px;
+    .image-frame img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      border-radius: 8px;
     }
 
     .back-link {
@@ -143,7 +148,7 @@
     <div class="top-links">
       <a href="index.html">Resume</a> |
       <a href="contact.html">Contact</a> |
-      <a href="hobbies.html">Hobbies</a>
+      <a href="hobbies.html">Creative Portfolio</a>
     </div>
 
     <p class="intro">
@@ -155,48 +160,81 @@
     <h2>Photography</h2>
     <div class="gallery">
       <div class="card">
-        <a href="photo1.jpg"><img src="photo1.jpg" alt="Photography 1"></a>
-     
+        <a href="photo1.jpg">
+          <div class="image-frame">
+            <img src="photo1.jpg" alt="Photography 1">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="photo2.jpg"><img src="photo2.jpg" alt="Photography 2"></a>
+        <a href="photo2.jpg">
+          <div class="image-frame">
+            <img src="photo2.jpg" alt="Photography 2">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="photo3.jpg"><img src="photo3.jpg" alt="Photography 3"></a>
+        <a href="photo3.jpg">
+          <div class="image-frame">
+            <img src="photo3.jpg" alt="Photography 3">
+          </div>
+        </a>
       </div>
     </div>
 
     <h2>Clay Art</h2>
     <div class="gallery">
       <div class="card">
-        <a href="clay1.jpeg"><img src="clay1.jpeg" alt="Clay art 1"></a>
+        <a href="clay1.jpeg">
+          <div class="image-frame">
+            <img src="clay1.jpeg" alt="Clay art 1">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="clay2.jpeg"><img src="clay2.jpeg" alt="Clay art 2"></a>
+        <a href="clay2.jpeg">
+          <div class="image-frame">
+            <img src="clay2.jpeg" alt="Clay art 2">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="clay3.jpeg"><img src="clay3.jpeg" alt="Clay art 3"></a>
+        <a href="clay3.jpeg">
+          <div class="image-frame">
+            <img src="clay3.jpeg" alt="Clay art 3">
+          </div>
+        </a>
       </div>
     </div>
 
     <h2>Painting & Drawing</h2>
     <div class="gallery">
       <div class="card">
-        <a href="paint1.jpg"><img src="paint1.jpg" alt="Painting 1"></a>
-        <div class="caption">Painting 1</div>
+        <a href="paint1.jpg">
+          <div class="image-frame">
+            <img src="paint1.jpg" alt="Painting 1">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="paint2.jpeg"><img src="paint2.jpeg" alt="Painting 2"></a>
+        <a href="paint2.jpeg">
+          <div class="image-frame">
+            <img src="paint2.jpeg" alt="Painting 2">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="paint3.jpeg"><img src="paint3.jpeg" alt="Drawing 1"></a>
-      
+        <a href="paint3.jpeg">
+          <div class="image-frame">
+            <img src="paint3.jpeg" alt="Drawing 1">
+          </div>
+        </a>
       </div>
     </div>
 
@@ -209,18 +247,27 @@
 
     <div class="gallery">
       <div class="card">
-        <a href="id1.jpeg"><img src="id1.jpeg" alt="Interior design project 1"></a>
-    
+        <a href="id1.jpeg">
+          <div class="image-frame">
+            <img src="id1.jpeg" alt="Interior design project 1">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="id2.jpeg"><img src="id2.jpeg" alt="Interior design project 2"></a>
-       
+        <a href="id2.jpeg">
+          <div class="image-frame">
+            <img src="id2.jpeg" alt="Interior design project 2">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="id3.jpeg"><img src="id3.jpeg" alt="Interior design project 3"></a>
-        
+        <a href="id3.jpeg">
+          <div class="image-frame">
+            <img src="id3.jpeg" alt="Interior design project 3">
+          </div>
+        </a>
       </div>
     </div>
 
@@ -232,18 +279,27 @@
 
     <div class="gallery">
       <div class="card">
-        <a href="logo1.jpg"><img src="logo1.jpg" alt="Logo design 1"></a>
-      
+        <a href="logo1.jpg">
+          <div class="image-frame">
+            <img src="logo1.jpg" alt="Logo design 1">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="logo2.jpg"><img src="logo2.jpg" alt="Logo design 2"></a>
-       
+        <a href="logo2.jpg">
+          <div class="image-frame">
+            <img src="logo2.jpg" alt="Logo design 2">
+          </div>
+        </a>
       </div>
 
       <div class="card">
-        <a href="logo3.jpg"><img src="logo3.jpg" alt="Logo design 3"></a>
-       
+        <a href="logo3.jpg">
+          <div class="image-frame">
+            <img src="logo3.jpg" alt="Logo design 3">
+          </div>
+        </a>
       </div>
     </div>
 
@@ -258,6 +314,5 @@
   </div>
 
 </body>
-
 </html>
 
